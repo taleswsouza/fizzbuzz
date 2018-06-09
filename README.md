@@ -28,7 +28,7 @@ $ git init
 Initialized empty Git repository in /dojo/fizzbuzz/.git/
 ```
 
-4. Verificar o status novamente
+5. Verificar o status novamente
 ```
 $ git status
 On branch master
@@ -40,7 +40,38 @@ Untracked files:
 ...
 ```
 
-5. Incluir todos os arquivos para serem acompanhados pelo versionamento do git
+6. Incluir todos os arquivos para serem acompanhados pelo versionamento do git
 ```
 $ git add --all
 ```
+
+7. Verificar o status novamente
+```
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+....
+```
+
+7. Comitar (gravar) uma versão dos arquivos
+```
+$ git commit -m "Commit inicial em 09/06/18 aula sábado com 4 alunos (Ricardo, Janison, Nicolas, Daniel)"
+```
+
+8. Adicionar o caminho para um repositório remoto (por exemplo no github)
+```
+$ git remote add origin https://github.com/taleswsouza/fizzbuzz.git
+```
+
+9. Enviar os arquivos para o repositório remoto que foi adicionado
+```
+$ git push -u origin master
+```
+
+_____________
+Abraços
+T.
